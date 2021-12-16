@@ -1,116 +1,111 @@
 
- a {
-  text-decoration: none;
- }
- li {
-  list-style: none;
- }
- /* NAVBAR STYLING STARTS */
-.navbar {
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #3366CC;
-  color: #fff;
- }
- .nav-links a {
-  color: #fff;
-  justify-content: left;
- }
- /* LOGO */
- .logo {
-  font-size: 32px;
- }
- /* NAVBAR MENU */
- .menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
- }
- .menu li:hover {
-  background-color: #3366ca;
-  border-radius: 5px;
-  transition: 0.3s ease;
- }
- .menu li {
-  padding: 5px 14px;
- }
- /* DROPDOWN MENU */
- .services {
-  position: relative; 
- }
- .dropdown {
-  background-color:#3366CC;
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 8px;
-  top: 35px;
- }
- .dropdown li + li {
-  margin-top: 10px;
- }
- .dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
- }
- .dropdown li:hover {
-  background-color: #3366ca;
- }
- .services:hover .dropdown {
-  display: block;
- }
+.clearfix {
+  overflow: auto;
+  }
+   
+  .m1{
+    position: absolute;
+   width: 446px;
+   height: 50px;
+  font-family: Averta Demo PE Cutted Demo;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 25px;
+   color: #000000;
+   padding-left:6%;
+   }
+
+   .m2{
+    position: absolute;
+   width:76px;
+   height: 64px;
+
+  }
+  .m2 img{
+    height:50px;
+    width:50px;
+  }
+  .p1 {
+    
+    
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    font-family: Averta Demo PE Cutted Demo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    }
+
+    .p2
+    {
+       position: absolute; 
+        width: 700px;
+         height: 100px; 
+        font-family: Averta Demo PE Cutted Demo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        font-weight:bold;
+        line-height: 20px; 
+        color: #000000;
+    }
+    .p3 {
+      position: absolute;
+      width: 300px;
+      height: 30px;
+      font-family: Averta Demo PE Cutted Demo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+     
+      }
+      .p4
+      {
+        position: absolute;
+         width: 700px;
+          height: 100px;
+         font-size: 16px;line-height: 20px; 
+         color: #000000;
+      }
+    
 
 
- /*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type=checkbox]{
-  display: none;
- } 
- /*HAMBURGER MENU*/
- .hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
- }
- /* APPLYING MEDIA QUERIES */
- @media (max-width: 600px) {
- .menu { 
-  display:none;
-  position: absolute;
-  background-color:#3366CC;
-  right: 0;
-  left: 0;
-  text-align: center;
-  padding: 16px 0;
- }
- .menu li:hover {
-  display: inline-block;
-  background-color:#3366ca;
-  transition: 0.3s ease;
- }
- .menu li + li {
-  margin-top: 12px;
- }
- input[type=checkbox]:checked ~ .menu{
-  display: block;
- }
- .hamburger {
-  display: block;
- }
- .dropdown {
-  left: 50%;
-  top: 30px;
-  transform: translateX(35%);
- }
- .dropdown li:hover {
-  background-color: #3366ca;
- }
- }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
 
 
 .img1
@@ -124,105 +119,23 @@ top: 14px;
 
 hr {
   background-color: #fff;
-  padding: 0;
-  margin: 111px;
-  margin-left: 178px;
+  
+  margin:5px;
+
 }
 hr.hr-1 {
+
   border: 0;
   height: 3px;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #b6c9f0, #3366cc);
 }
 /* text heading of sairaj*/
-.m1{
-  position: absolute;
- width: 446px;
- height: 50px;
- left: 260px;
- top: 450px;
- font-family: Averta Demo PE Cutted Demo;
- font-style: normal;
- font-weight: normal;
- font-size: 24px;
- line-height: 25px;
- 
- color: #000000;
- 
- }
 
- .m2{
-  position: absolute;
- width:76px;
- height: 64px;
- left: 180px;
- top: 440px;
-}
-.m2 img{
-  height:50px;
-  width:50px;
-}
-/*Donate for a cause css*/
-.doante{
-  position: absolute;
-width: 200px;
-height: 20px;
-left: 987px;
-top: 15px;
-font-family: Averta Demo PE Cutted Demo;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 20px;
-/* identical to box height */
-color: #FFFFFF;
-}
-/*My dashboard css*/
-.dash
-{
-position: absolute;
-width: 200px;
-height: 20px;
-left: 1140px;
-top: 15px;
-font-family: Averta Demo PE Cutted Demo;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 20px;
-color: #FFFFFF;
-}
+
+ 
+
 /*Paragraph css*/
-.p1 {
-position: absolute;
-width: 300px;
-height: 30px;
-left: 180px;
-font-family: Averta Demo PE Cutted Demo;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 30px;
-}
-.p3 {
-  position: absolute;
-  width: 300px;
-  height: 30px;
-  left:180px;
-  font-family: Averta Demo PE Cutted Demo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
-  top:730px;
-  }
-  .p4
-  {
-    position: absolute; width: 700px; height: 100px; left: 180px;
-     top: 770px;font-family: Averta Demo PE Cutted Demo;
-     font-style: normal;font-weight: normal;
-     font-size: 16px;line-height: 20px; 
-     color: #000000;
-  }
+
 
 /* Goals Achieved */
 
@@ -278,21 +191,7 @@ background: #C4C4C4;
   position:relative;
 }
 
-.p2
-{
-    top:620px;
-    position: absolute; 
-    width: 700px;
-     height: 100px; 
-     left: 180px;
-    font-family: Averta Demo PE Cutted Demo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    font-weight:bold;
-    line-height: 20px; 
-    color: #000000;
-}
+
 .c1{
  /*  top:1240px;*/
     position: absolute; 
@@ -301,9 +200,9 @@ background: #C4C4C4;
 
 } 
 .showbutton {
-  position: relative;
-  top: 50%;
-  left: 70%;
+  position: absolute;
+  top: 52%;
+  left: 88%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #fff;
@@ -314,17 +213,7 @@ background: #C4C4C4;
   cursor: pointer;
   border-radius: 5px;
 }
-.modal-body
- {
-    height: 200px;
-width: auto;
-padding: 50px;
- }
- #Modal12
- {
-   
-padding: 50px;
- }
+
   @media screen and (max-width:600px) {
   .s1{
       width:70%;
@@ -427,7 +316,7 @@ border-radius: 15px;
   border-color: #3366cc;
   width: 79%;
   align-content: space-around;
-  margin-left: 40px;
+  margin-left: 10%;
   height:40px;
   font-family:'Roboto', sans-serif;font-weight:bold;
 }
@@ -443,7 +332,7 @@ border-radius: 15px;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
   box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
-  margin-left: 39px;
+  margin-left: 10%;
   margin-top:40px;
   border:1px solid #ccc;
   
