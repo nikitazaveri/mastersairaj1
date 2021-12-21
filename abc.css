@@ -148,7 +148,7 @@ div.sticky {
     position: absolute;
    width: 600px;
    height: 50px;
-  font-family: Averta Demo PE Cutted Demo;
+  
    font-style: normal;
    font-weight: normal;
    font-size: 24px;
@@ -161,7 +161,6 @@ div.sticky {
     position: relative;
    width: 600px;
    height: 6px;
-  font-family: Averta Demo PE Cutted Demo;
    font-style: normal;
    font-weight: normal;
    font-size: 24px;
@@ -181,4 +180,16 @@ div.sticky {
     border: 0;
     height: 3px;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #b6c9f0, #3366cc);
+  }
+
+  /* Averta demo font */
+  @font-face{
+    font-family:Averta Demo;
+    src:url(averta.ttf);
+  }
+  div p{
+    font-family:Averta Demo;
+  }
+  body{
+    font-family: Averta Demo;
   }

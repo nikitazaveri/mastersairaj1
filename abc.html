@@ -9,13 +9,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-   <!--Font for Roboto-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-   <!--font link ends here-->
+   
   <link rel="stylesheet" href="abc.css">
+  <style>
+     @media screen and (max-width: 600px) {
+    .sticky
+    {
+       position:fixed;
+       bottom:0px;
+    }
+    }
+  
+  </style>
 </head>
 <body>
   
@@ -44,7 +51,8 @@
       </script>
       
 </div>
-<div class="container">
+
+<div class="container" style="margin-left:5%;margin-right:5%;">
 
     <div class="row" style="padding-top:5px;height:300px;">
         <div  style="width:50%;float:left;">
@@ -66,6 +74,7 @@
                 <img class="img_header" src="images/e5.jpg" alt="This is first image" 
                 style="height:164px;width:100%;border-radius:0px 0px 17px 0px;">
                <!--<button class="showbutton"><i class="fa fa-th"></i>&nbsp;&nbsp;Show All Photos</button></img>-->
+               
             </div>
         </div>
        
@@ -78,9 +87,9 @@
             <div class="headline">
                 <div class="clearfix"><br>
                 <img  class="m2" src="images/download.png" alt="Sairaj" width="40px" height="60px"style="border-radius:50%;padding-right:5px;">
-                <p class="m1" style="font-family: 'Roboto', sans-serif;font-weight:bold;">Support Master ,Sairaj continues his Education!!!</p>
+                <p class="m1">Support Master ,Sairaj continues his Education!!!</p>
                 <p style="size:14;position: absolute;  width: 450px;margin-top:10px;
-                height: 50px;font-family: 'Roboto', sans-serif;padding-left:7%;">
+                height: 50px;padding-left:7%;">
                <br><br>Support Master. Sairaj continue his Education! Support Master. Sairaj continue his Education!
                 </p>
                 </p>
@@ -90,20 +99,20 @@
             <hr class="hr-1">
 
             <div class="profile">
-                <div class="p1"style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:22px;">Problem Statement</div><br>
+                <div class="p1"style="font-size:22px;">Problem Statement</div><br>
                
-                <div class="p2" style="font-family: 'Roboto', sans-serif;font-size:14px;font-weight:bold;">
+                <div class="p2" style="font-size:14px;">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
                         of type and scrambled it to make a type specimen book. It has survived not only five... 
-                        <br><a style="color:black;"><br><u>See More > </u></a> 
+                        <br><a style="color:black;"><br><u onclick="document.getElementById('id01').style.display='block'">See More > </u></a> 
                         <br>
                         
                 </div>
             </div>  
             
             <div class="beneficiary">
-                <div class="p3"style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:22px;"><br>About Benficiary</div>
-                    <div class="p4" style="font-family: 'Roboto', sans-serif;font-size:14px;font-weight:bold;">
+                <div class="p3"style="font-size:22px;"><br>About Benficiary</div>
+                    <div class="p4" style="font-size:14px;">
                         <br>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
                             of type and scrambled it to make a type specimen book. It has survived not only five... 
@@ -118,15 +127,35 @@
 
 
                             <div class="goals_achieved" style="padding: 25px 0px;">
-                                <p class="goals_achieved"style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:22px;">Goals Achieved</p>
+                                <p class="goals_achieved"style="font-size:22px;">Goals Achieved</p>
                                 
                                 <div class="clearfix"><br>
                                     <img  class="m4" src="images/goodhealth2.png" alt="Sairaj" width="60px" height="60px"style="border-radius:5px;padding-right:0px;">
-                                    <p class="m3" style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:18px">Clear off current year fees</p>
+                                    <p class="m3" style="font-size:18px">Clear off current year fees<img src="images/check-circle.svg" style="height:20px; width:20px;margin-left:95%;"></p>
                                     <p style="position: absolute;  width: 450px;
-                                    height: 50px;font-family: 'Roboto', sans-serif;padding-left:4.5%;">
+                                    height: 50px;padding-left:4.5%;">
                                    Project Description:Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                   Lorem Ipsum has..<a href="#">view more</a>
+                                   Lorem Ipsum has..<a href="#" onclick="document.getElementById('id01').style.display='block'">view more</a>
+                                   <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content">
+                                      <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                             ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                              quas nostrum quae facilis ipsam! At, molestiae?
+                                              <br>
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                             ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                              quas nostrum quae facilis ipsam! At, molestiae?
+                                              <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                              ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                               quas nostrum quae facilis ipsam! At, molestiae?
+
+                                        </p>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
                                     </p>
                                     </p>
                                     </img>
@@ -134,11 +163,33 @@
                               <br><br>
                                 <div class="clearfix"><br>
                                     <img  class="m4" src="images/goodhealth2.png" alt="Sairaj" width="60px" height="60px"style="border-radius:5px;padding-right:0px;">
-                                    <p class="m3" style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:18px">Pay off current year fees</p>
+                                    <p class="m3" style="font-size:18px">Pay off current year fees<img src="images/check-circle (1).svg" style="height:20px; width:20px;margin-left:57%;"></p>
                                     <p style="position: absolute;  width: 450px;
-                                    height: 50px;font-family: 'Roboto', sans-serif;padding-left:4.5%;">
+                                    height: 50px;padding-left:4.5%;">
                                    Project Description:Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                   Lorem Ipsum has..<a href="#">view more</a>
+                                   Lorem Ipsum has..<a href="#"onclick="document.getElementById('id01').style.display='block'">view more</a>
+                                   <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content">
+                                      <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                             ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                              quas nostrum quae facilis ipsam! At, molestiae?
+                                              <br>
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                             ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                              quas nostrum quae facilis ipsam! At, molestiae?
+                                              <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                              ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                               quas nostrum quae facilis ipsam! At, molestiae?
+
+                                        </p>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                   
+                                   
                                     </p>
                                     </p>
                                     </img>
@@ -147,11 +198,32 @@
                                 <br><br>
                                 <div class="clearfix"><br>
                                     <img  class="m4" src="images/goodhealth2.png" alt="Sairaj" width="60px" height="60px"style="border-radius:5px;padding-right:0px;">
-                                    <p class="m3" style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:18px">Aid with the purchase of study material</p>
+                                    <p class="m3" style="font-size:18px">Aid with the purchase of study material<img src="images/check-circle.svg" style="height:20px; width:20px;margin-left:95%;"></p>
                                     <p style="position: absolute;  width: 450px;
-                                    height: 50px;font-family: 'Roboto', sans-serif;padding-left:4.5%;">
+                                    height: 50px;padding-left:4.5%;">
                                    Project Description:Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                   Lorem Ipsum has..<a href="#">view more</a>
+                                   Lorem Ipsum has..<a href="#" onclick="document.getElementById('id01').style.display='block'">view more</a>
+
+                                   <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content">
+                                      <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                             ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                              quas nostrum quae facilis ipsam! At, molestiae?
+                                              <br>
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                             ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                              quas nostrum quae facilis ipsam! At, molestiae?
+                                              <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                              ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                               quas nostrum quae facilis ipsam! At, molestiae?
+
+                                        </p>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
                                     </p>
                                     </p>
                                     </img>
@@ -160,7 +232,7 @@
                             </div>
                             <br>
                         <div class="sustainable" style="padding: 25px 0px;">
-                            <p class="sustainable"style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:22px;">Sustainable Development Goals</p>
+                            <p class="sustainable"style="font-size:22px;">Sustainable Development Goals</p>
                             <div style="padding-left:5px;padding-top:3px;font-size:20px;">
                                 <img src="images/goodhealth2.png"height="70px;width:70px;" 
                                 style="padding-top:5px;font-size:20px; border-radius: 10px;">
@@ -183,9 +255,32 @@
                         </div>
 
                         <div class="about_us">
-                            <p class="ngo"style="font-family: 'Roboto', sans-serif;font-weight:bold;font-size:22px;">About NGO</p>
+                            <p class="ngo"style="font-size:22px;">About NGO</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                                of type and scrambled it to make a type specimen book. It has survived not only five... </p>
+                                of type and scrambled it to make a type specimen book. It has survived not only five...
+                            <br>
+                        <a href="#"  onclick="document.getElementById('id01').style.display='block'">See More --></a>
+                    
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                              <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                     ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                      quas nostrum quae facilis ipsam! At, molestiae?
+                                      <br>
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                     ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                      quas nostrum quae facilis ipsam! At, molestiae?
+                                      <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero quis non veritatis ratione,
+                                      ut recusandae perspiciatis incidunt, consequatur, excepturi veniam iusto blanditiis
+                                       quas nostrum quae facilis ipsam! At, molestiae?
+
+                                </p>
+                                
+                              </div>
+                            </div>
+                          </div></p>
 
                         </div>
 
@@ -240,10 +335,11 @@
                     <button class="btn btn-primary" value="Donate Now" width="100%" height="20px">Donate Now</button>
                 </div>  
                   <div>
-                      <i class="fa fa-credit-card" style="margin-left: 5%;
-                      margin-top: 17px;font-size:14px;">&nbsp;All debit/credit cards</i>
-                      <i class="fa fa-globe" style="margin-left:5px;
-                      margin-top: 17px;font-size:14px;">&nbsp;Net Banking</i>
+                      <img src="images/credit-card.svg"style="margin-left: 2%;
+                      margin-top: 0px;font-size:10px;">&nbsp;<span style="font-size:12px;">All debit/credit cards</span></img>
+                      
+                      <img src="images/globe@2x.svg"style="margin-left: 0%;
+                      margin-top: 0px;font-size:10px;">&nbsp;<span style="font-size:12px;">Net Banking</span></img>
                       <img src="images/Unified_Payments_Interface-Logo.wine.svg"height="40px" width="70px">
 
                   </div>
@@ -255,6 +351,9 @@
             </div>
             </div>
       </div>
+</div>
+<div class="footer">
+    <div style="background:#ccc;"><h1><center>Footer</center></h1></div>
 </div>
 </body>
 </html>
